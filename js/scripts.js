@@ -26,12 +26,14 @@ $(document).ready(function() {
 
 
     $('#bt-equal').click(function() {
+
         var result = nr_up + nr_c
         result = result.replace("=", "")
         result = eval(result)
-        
-
+        $('#txt_display').text(result);
+    
     })
+
 });
 
 
