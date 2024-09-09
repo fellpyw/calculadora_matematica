@@ -37,7 +37,26 @@
 #interface table {
     margin: 0 auto;
     margin-block-end: 5px;
-    border-radius: 5px;
+    border-radius: .25rem;
+    background-color: #ddd;
+    padding: .5rem;
+    box-shadow: 0 0 2px rgba( 0, 0, 0, .8);
+}
+
+#interface table #painel #txt_operadores {
+    display: block;
+    color: #fafafa;
+    text-align: right;
+
+}
+
+#interface table #painel #txt_display {
+    display: block;
+    width: 100%;
+    backgroung-color: transparent;
+    border: 0;
+    outline: none;    
+
 }
 
 #interface table button {

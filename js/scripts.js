@@ -34,6 +34,12 @@ $(document).ready(function() {
     
     })
 
+    $('#bt-acce').click(function() {
+        
+        var acce = "0";
+        $('#txt_display').text(acce);
+    })
+
 });
 
 
