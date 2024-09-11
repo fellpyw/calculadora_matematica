@@ -34,6 +34,10 @@
     font-size: 1.5rem;
 }
 
+#interface main {
+    display: block;
+}
+
 #interface table {
     margin: 0 auto;
     margin-block-end: 5px;
@@ -41,6 +45,14 @@
     background-color: #ddd;
     padding: .5rem;
     box-shadow: 0 0 2px rgba( 0, 0, 0, .8);
+}
+
+#interface table #painel {
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #333;
+    border-radius: .25rem;
 }
 
 #interface table #painel #txt_operadores {
@@ -53,10 +65,11 @@
 #interface table #painel #txt_display {
     display: block;
     width: 100%;
-    backgroung-color: transparent;
+    background-color: transparent;
     border: 0;
     outline: none;    
-
+    color: #fafafa;
+    text-align: right;
 }
 
 #interface table button {
@@ -69,7 +82,7 @@
 #interface table #bt-acce {
     font-size: .8rem;
     font-weight: bold;
-    color: rgb(126, 10, 10);
+    color: #7e0a0a;
 }
 
 #interface table #bt-plus,
