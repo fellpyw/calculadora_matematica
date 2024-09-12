@@ -1,44 +1,34 @@
 $(document).ready(function() {
     
-    var nr_c = "";
+    var bt_nr = '';
 
-    $('.bt-calc').click(function() {
-    
-        if (nr_c.length < 25) {
-            var nr = $(this).text();
+    $('.bt-nr').click(function() {
+        var n = $(this).text();
 
-            nr_c = nr_c.concat(nr);
+        if(bt_nr[0] !== '0') {
 
-            $('#txt_display').text(nr_c);
+            bt_nr = bt_nr.concat(n);
+
+        } else if ( bt_nr[0] !== '0' && bt_nr[1] !== '.') {
+
+            bt_nr = bt_nr.concat(n);
+
+        } else {
+
+            if (bt_nr.length == 1 && n == '.') {
+
+                bt_nr = bt_nr.concat(n);
+                $(this).attr('disabled', 'true');
+                
+            } else {
+
+                bt_nr = bt_nr.concat(n);
+
+            }
         }
+
+        $('#txt_display').val(bt_nr);
     });
-
-    var nr_up = "";
-
-    $('#bt-plus').click(function(){
-
-        nr_up = nr_c
-        nr_c = ""
-        $('#txt_display').text("0");
-        $('#txt_operadores').text(nr_up);
-        
-        })
-
-
-    $('#bt-equal').click(function() {
-
-        var result = nr_up + nr_c
-        result = result.replace("=", "")
-        result = eval(result)
-        $('#txt_display').text(result);
-    
-    })
-
-    $('#bt-acce').click(function() {
-        
-        var acce = "0";
-        $('#txt_display').text(acce);
-    })
 
 });
 

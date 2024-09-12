@@ -40,10 +40,9 @@
 
 #interface table {
     margin: 0 auto;
-    margin-block-end: 5px;
+    padding: .5rem;
     border-radius: .25rem;
     background-color: #ddd;
-    padding: .5rem;
     box-shadow: 0 0 2px rgba( 0, 0, 0, .8);
 }
 
@@ -69,6 +68,7 @@
     border: 0;
     outline: none;    
     color: #fafafa;
+    font-size: 22px;
     text-align: right;
 }
 
@@ -90,13 +90,5 @@
     height: 102px;
 }
 
-#interface #painel {
-    text-align: right;
-    background-color: #c0c0c0;
-    display: block;
-    width: 100%;
-    font-size: 1.2rem;
-    color: #333;
-}
  
 
