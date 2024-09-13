@@ -1,5 +1,6 @@
 $(document).ready(function() {
     
+
     var bt_nr = '';
 
     $('.bt-nr').click(function() {
@@ -30,9 +31,10 @@ $(document).ready(function() {
         $('#txt_display').val(bt_nr);
     });
 
+    $('.bt-calc').click(function() {
+        var bt_nr = $(this).text();
+
+        $('#txt_display').val(bt_nr);
+
+    })     
 });
-
-
-
-
-    
